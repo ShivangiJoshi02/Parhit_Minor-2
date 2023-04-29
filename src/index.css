@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: "Poppins", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body{
+    scroll-behavior: smooth;
 }
+
+
+
+  
+  .main-hero-container {
+    height: 80vh;
+    display: flex;
+    /* background-color: aqua; */
+  }
+  
+  .main-hero-container h1 {
+    text-transform: capitalize;
+    font-weight: bolder;
+  }
+  
+  .main-hero-para {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin: 3rem 0 5rem 0;
+    font-weight: lighter;
+    width: 75%;
+  }
+  
+  .main-hero-container h3 {
+    font-weight: lighter;
+  }
+  
+  .input-group {
+    position: relative !important;
+  }
+  
+  .form-control-text {
+    position: absolute;
+    height: 5rem;
+    border: none;
+    outline-style: none;
+    padding-left: 1.5rem !important;
+    font-size: 1.4rem;
+    font-weight: lighter;
+  }
+  
+  .input-group-button {
+    position: absolute;
+    right: 51%;
+    top: 0.5rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    height: 4rem;
+    width: 15%;
+    border-radius: 2rem !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+  }
+  
+  /* right side of hero section  */
+  
+  
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
