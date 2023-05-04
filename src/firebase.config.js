@@ -1,18 +1,21 @@
 import {getApp, getApps, initializeApp} from "firebase/app"
 import {getFirestore} from "firebase/firestore"
 import {getStorage} from "firebase/storage"
-const firebaseConfig = {
-    apiKey: "AIzaSyBwe0Z8-QsQ4kzfURs549AkiCeMw51EVbc",
-    authDomain: "restaurant-website-d6e3b.firebaseapp.com",
-    databaseURL: "https://restaurant-website-d6e3b-default-rtdb.firebaseio.com",
-    projectId: "restaurant-website-d6e3b",
-    storageBucket: "restaurant-website-d6e3b.appspot.com",
-    messagingSenderId: "451760656615",
-    appId: "1:451760656615:web:a76b8e85f151b65a155242"
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAN-S4QiDdgG6CR3Px4e8IxBmVu6VK3B34",
+    authDomain: "parhitv3.firebaseapp.com",
+    databaseURL: "https://parhitv3-default-rtdb.firebaseio.com",
+    projectId: "parhitv3",
+    storageBucket: "parhitv3.appspot.com",
+    messagingSenderId: "295634131952",
+    appId: "1:295634131952:web:ff773e19a162a47ae21b35",
+    measurementId: "G-Z81EBHYZZW"
   };
 
   const app = getApps.Length >0 ? getApp() : initializeApp(firebaseConfig);
   const firestore = getFirestore(app);
   const storage = getStorage(app);
+
 
   export {app, firestore, storage};

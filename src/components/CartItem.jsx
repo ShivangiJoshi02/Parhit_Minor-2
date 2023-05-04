@@ -17,8 +17,7 @@ const CartItem = ({ item, setFlag, flag }) => {
       cartItems: items,
     });
   };
-
-  const updateQty = (action, id) => {
+const updateQty = (action, id) => {
     if (action === "add") {
       setQty(qty + 1);
       cartItems.map((item) => {
